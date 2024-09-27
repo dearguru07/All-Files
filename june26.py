@@ -1,12 +1,12 @@
 
-# def Reversal_loop(nstr, i, s1):
-#     if i == len(s1):
-#         return nstr
-#     nstr = s1[i] + nstr
-#     return Reversal_loop(nstr, i + 1, s1)
-# s1 = input("enter a new string : ")
-# result = Reversal_loop("", 0, s1)
-# print(result)
+def Reversal_loop(nstr, i, s1):
+    if i == len(s1):
+        return nstr
+    nstr = s1[i] + nstr
+    return Reversal_loop(nstr, i + 1, s1)
+s1 = input("enter a new string : ")
+result = Reversal_loop("", 0, s1)
+print(result)
 
 
 # def CountWords(s):
@@ -32,7 +32,7 @@
 #         count += 1
 #     return count
 
-# n =input()
+# n =input('enter a str')
 # character_count = count(n)
 # print(character_count)
 
@@ -79,7 +79,7 @@
 #     if i !=" ":
 #         word=word+i
 #     else:
-#         convwrd=ConvertLower(word)
+#         convwrd=ConvortLower(word)
 #         if convwrd==replaceword:
 #             newSen=newSen+newword+" "
 #         else:

@@ -1,11 +1,11 @@
-n=input('enter a str: ')
-for i in range(0,len(n)):
-    for j in range(0,len(n)):
-        if i==1 or i==n or j==1 or j==n :
-            print(n[i],end=" ")
-        else:
-            print(n[j],end=" ")
-    print()
+# n=input('enter a str: ')
+# for i in range(0,len(n)):
+#     for j in range(0,len(n)):
+#         if i==1 or i==n or j==1 or j==n :
+#             print(n[i],end=" ")
+#         else:
+#             print(n[j],end=" ")
+#     print()
 
 
 

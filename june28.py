@@ -57,7 +57,7 @@
 
 
 
-s1=input()
+s1=input('Enter a string')
 index1=-2
 index2=-2
 for i in range(len(s1)):
@@ -76,11 +76,5 @@ for i in range(len(s1)):
             print(' ',end=" ")
     print()                            
         
-    
 
-# s1=input("enter a str: ")
-# ascii=[0]*91
-# flag=True
-# for i in s1:
-#     if i >="a" and I<="z":
         

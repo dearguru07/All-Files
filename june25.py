@@ -1,7 +1,7 @@
-# str=input("enter a str: ")
-# for i in str:
-#     ele=ord(i)-32
-#     print(chr(ele))
+str=input("enter a str: ")
+for i in str:
+    ele=ord(i)-32
+    print(chr(ele))
 
 
 # def Convert(str):
@@ -55,13 +55,14 @@
 # print(resul)
 
 
-def Reversal_loop(nstr, i, s1):
-    if i == len(s1):
-        return nstr
-    nstr = s1[i] + nstr
-    return Reversal_loop(nstr, i + 1, s1)
 
+# reversed sentance---------------
 
-s1 = input("enter a new string : ")
-result = Reversal_loop("", 0, s1)
-print(result)
+# def Reversal_loop(nstr, i, s1):
+#     if i == len(s1):
+#         return nstr
+#     nstr = s1[i] + nstr
+#     return Reversal_loop(nstr, i + 1, s1)
+# s1 = input("enter a new string : ")
+# result = Reversal_loop("", 0, s1)
+# print(result)
