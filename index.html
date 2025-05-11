@@ -11,3 +11,51 @@
     <button>Click Me...</button>
 </body>
 </html>
+
+import { useState } from "react";
+import "./styles.css";
+
+const App = () => {
+  const [inputText, setInputText] = useState("");
+  const [chipsArr, setChipsArr] = useState([]);
+  const handleBtn = (e) => {
+    if (e.key === "Enter") {
+      setChipsArr((prev) => [...prev, inputText]);
+      setInputText("");
+    }
+  };
+  const handledelete = (index) => {
+    const copyChips = [...chipsArr];
+    copyChips.splice(index, 1);
+    setChipsArr(copyChips);
+  };
+  return (
+    <div className="App">
+      <h1>Chips Inputs</h1>
+      <input
+        type="text"
+        value={inputText}
+        onChange={(e) => setInputText(e.target.value)}
+        onKeyDown={(e) => handleBtn(e)}
+      />
+
+      <div className="flex">
+        {chipsArr.map((chip, index) => {
+          return (
+            <div className="chips" key={chip}>
+              {chip}
+              <button
+                onClick={(e) => {
+                  handledelete(e);
+                }}
+              >
+                X
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+export default App;
