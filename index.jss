@@ -55,3 +55,12 @@ function Factorial(n) {
     return n * Factorial(n - 1);
 }
 console.log(Factorial(n));
+
+
+
+function PowerOfTwo(n) {
+    if (n == 1) return true;
+    else if (n < 1 || n % 2 !== 0) return false;
+    return PowerOfTwo(n / 2);
+}
+console.log(PowerOfTwo(32))
